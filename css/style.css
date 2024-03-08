@@ -13,7 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 400;
-    color: #505050;
+    color: #777777;
     font-style: normal;
     line-height: 26px;
 }
@@ -104,9 +104,13 @@ body {
     box-shadow: 4px 2px 0 0 #fe8366;
 }
 
+.slider-four .slider-img {
+    margin-top: 90px;
+    margin-right: -120px;
+}
 .slider-four .slider-img img {
     position: relative;
-    left: -1020px;
+    z-index: -1;
 }
 
 .slider-four .slider-bg .text2 h5 {
@@ -118,12 +122,6 @@ body {
 
 .slider-four .slider-bg .text2 p {
     color: #62605c;
-}
-
-.slider-bg {
-    padding: 350px 0 425px;
-    background-size: cover;
-    background-position: center;
 }
 
 .slider-btn .btn {
