@@ -8,6 +8,7 @@
         right: 20px;
         left: auto;
     }
+<<<<<<< HEAD
 
     .slider-img img {
         margin-top: 30px;
@@ -16,6 +17,8 @@
     .slider-content {
         margin-top: 20px;
     }
+=======
+>>>>>>> bf8f2d6 (refactor: dp3-introduction)
 }
 
 /* Tablet desktop :768px. */
@@ -26,6 +29,7 @@
     .slider-bg {
         min-height: 700px;
     }
+<<<<<<< HEAD
     .slider-content {
         margin-top: 20px;
     }
@@ -36,20 +40,51 @@
     .slider-img img {
         margin-top: 20px;
         flex-basis: 100%;
+=======
+
+    .slider-four .slider-img {
+        margin-left: 0;
+        margin-top: 50px;
+        margin-right: 0;
+    }
+
+    .slider-text-column,
+    .slider-image-column {
+        flex: 0 0 100%;
+        max-width: 100%;
+>>>>>>> bf8f2d6 (refactor: dp3-introduction)
     }
 }
 
 /* small mobile :320px. */
+<<<<<<< HEAD
 @media (max-width: 768px) {
+=======
+@media (max-width: 767px) {
+>>>>>>> bf8f2d6 (refactor: dp3-introduction)
     .slider-text-column,
     .slider-image-column {
         flex: 0 0 100%;
         max-width: 100%;
     }
     .slider-content {
+<<<<<<< HEAD
         text-align: center;
     }
     .slider-img {
         margin-left: 50px;
+=======
+        text-align: left;
+    }
+
+    .slider-four .slider-img {
+        margin-left: 0;
+        margin-top: 50px;
+        margin-right: 0;
+    }
+
+    .s-slider-content p {
+        padding-right: 0;
+>>>>>>> bf8f2d6 (refactor: dp3-introduction)
     }
 }
