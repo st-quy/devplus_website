@@ -4,85 +4,45 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Devplus-khanh</title>
+  <title>Devplus</title>
   <!-- Styles -->
-
-  <link href="css/style-about.css" rel="stylesheet" />
-  <link href="css/responsive-about.css" rel="stylesheet" />
   <link href="css/style.css" rel="stylesheet" />
 
 </head>
 
 <body>
-  <section id="about" class="about-area p-relative" style="
-        background: url(img/blog-bg-aliments.png) no-repeat;
-        background-position: center center;
-      ">
-    <div class="container ">
-      <div class="container-img">
-        <div class="about-img fadeInLeft animated" data-animation="fadeInLeft" data-delay=".4s">
-          <img class="img" src="img/aboutus.png" alt="img" />
-          <div class="about-text">
-            <div class="all-text">
-              <h3>3</h3>
-              <span>years of <br />
-                experience</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="about-content fadeInRight animated" data-animation="fadeInRight" data-delay=".4s">
-        <div class="about-title">
-          <h5>About DevPLus</h5>
+  <!-- vedio-area -->
+  <section id="video" class="video-area">
+    <div class="container-vedio">
+      <div class="row">
+        <div class="section-title center-align text-center">
+          <h5>Watch Us</h5>
           <h2>
-            The Fact: Skilled labour shortage for software companies but
-            full of freshers and low level juniors
+            Congratulation
           </h2>
         </div>
-        <p>
-          Our responsibility is filling the gap between the quality of
-          graduate students and the quality of engineers. <br>Devplus will
-          help reducing the cost of re-training and accelerating the
-          skill-up progress of students and freshers.
-        </p>
-        <div class="slider-btn">
-          <a href="about.html" class="btn ss-btn" data-animation="fadeInRight" data-delay=".8s">Read More</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="video-img wow fadeInRight animated" data-animation="fadeInDown animated" data-delay=".2s"
+        style="background-image:url(img/video/vedio-img.png);left: 18%; background-repeat: no-repeat; background-position: center;">
+        <!-- Link to open the pop-up -->
+        <a href="#video-popup" class="video-i popup-video"> <img src="img/video/play_Icon.png" alt="img"
+            class="active-icon"></a>
+      </div>
+      <!-- The pop-up -->
+      <div id="video-popup" class="video-popup">
+        <div class="popup-content">
+          <a href="#" class="close-popup">x</a>
+          <!-- Embed YouTube video -->
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/mUjhiT0zSKI" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </div>
     </div>
     </div>
-    </div>
-    <!-- vedio-area -->
-    <section id="video" class="video-area">
-      <div class="container-vedio">
-        <div class="row">
-          <div class="section-title center-align text-center">
-            <h5>Watch Us</h5>
-            <h2>
-              Congratulation
-            </h2>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="video-img wow fadeInRight animated" data-animation="fadeInDown animated" data-delay=".2s"
-          style="background-image:url(img/video/vedio-img.png);left: 18%; background-repeat: no-repeat; background-position: center;">
-          <!-- Link to open the pop-up -->
-          <a href="#video-popup" class="video-i popup-video"> <img src="img/video/play_Icon.png" alt="img"
-              class="active-icon"></a>
-        </div>
-        <!-- The pop-up -->
-        <div id="video-popup" class="video-popup">
-          <div class="popup-content">
-            <a href="#" class="close-popup">x</a>
-            <!-- Embed YouTube video -->
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/mUjhiT0zSKI" frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div>
-      </div>
-    </section>
+  </section>
 </body>
 <script src="./js/index.js"></script>
+
 </html>
