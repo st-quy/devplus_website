@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Devplus</title>
   <!-- Styles -->
-  <link href="css/styleWatchus.css" rel="stylesheet" />
-
+  <link href="css/styleheader.css" rel="stylesheet" />
 </head>
 
 <body>
-  <!-- vedio-area -->
-  <section id="video" class="video-area">
-    <div class="container-vedio">
-      <div class="row">
-        <div class="section-title center-align text-center">
-          <h5>Watch Us</h5>
-          <h2>
-            Congratulation
-          </h2>
+  <header class="header-area header-three">
+    <div id="header-sticky" class="menu-area">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"><img src="img/logodev.png" alt="logo"></a>
         </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="video-img wow fadeInRight animated" data-animation="fadeInDown animated" data-delay=".2s">
-        <!-- Link to open the pop-up -->
-        <a href="#video-popup" class="video-i popup-video"> <img src="img/video/play_Icon.png" alt="img"
-            class="active-icon"></a>
-      </div>
-      <!-- The pop-up -->
-      <div id="video-popup" class="video-popup">
-        <div class="popup-content">
-          <a href="#" class="close-popup">x</a>
-          <!-- Embed YouTube video -->
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/mUjhiT0zSKI" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="togle_menu">
+
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
         </div>
+        <div class="right-menu">
+          <nav id="mobile-menu" style="display: block;">
+            <ul>
+              <li class="sub">
+                <a href="index.html">Home</a>
+              </li>
+              <li><a href="about.html">About Us</a></li>
+              <li class="sub">
+                <a href="blog.html">News</a>
+                <ul>
+                  <li><a href="blog.html">News</a></li>
+                  <li><a href="blog-details.html">News Details</a></li>
+                </ul>
+              </li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+          <div class="mobile-menu"></div>
       </div>
     </div>
     </div>
-    </div>
+  </header>
+  <script src="./js/index.js"></script>
 </body>
-<script src="./js/index.js"></script>
 </html>

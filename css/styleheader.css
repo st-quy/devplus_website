@@ -1,0 +1,129 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif; /* This is a generic font, match with the actual font used */
+  }
+  
+  /* Logo styles */
+  .logo a {
+    display: inline-block;
+    /* Add your logo size here */
+    width: auto; /* Adjust as per your logo's aspect ratio */
+    height: 60px; /* Adjust if needed */
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .right-menu ul{
+    display: flex;
+    flex-direction: row ; 
+    gap: 30px 
+  }
+  .right-menu li{
+    list-style: none;
+  }
+  /* Menu area styles */
+  #header-sticky {
+    background-color: #fff; /* Or any other color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a slight shadow for depth */
+  }
+  
+  .right-menu {
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  /* Main menu styles */
+  .right-menu nav {
+    display: flex;
+    justify-content:flex-end; /* Aligns menu to the right */
+  }
+  
+  .right-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .right-menu li {
+    padding: 0 15px; /* Adjust the spacing between menu items here */
+  }
+  
+  .right-menu li a {
+    text-decoration: none;
+    color: #000; /* Color of the menu items */
+    font-weight: bold; /* Adjust the font-weight as needed */
+    transition: color 0.3s ease;
+    justify-content:flex-end;
+  }
+  
+  
+  .right-menu li a:hover {
+    color: #ff6a00; /* Color when hovered, choose one that fits the design */
+  }
+  
+  /* Sub menu styles */
+  .sub ul {
+    display: none; /* Hide sub menu */
+    position: absolute; /* Position it absolutely within relative parent */
+    background-color: #fff; /* Background of the sub menu */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensures it's on top */
+  }
+  
+  .sub:hover ul {
+    display: block; /* Shows sub menu on hover */
+  }
+  
+  .sub ul li {
+    padding: 10px 20px; /* Adjust padding for sub menu items */
+  }
+  
+  /* Mobile menu styles */
+  .mobile-menu {
+    display: none;
+  }
+
+  .toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    }
+
+    .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: black;
+        border-radius: 10px;
+    }
+
+
+  /* Responsive design */
+  @media (max-width: 991px) {
+    .right-menu {
+      display: none; /* Hide the main menu on smaller screens */
+    }
+  
+
+    .toggle-button {
+        display: flex;
+    }
+  }
+
+
+  
