@@ -16,7 +16,8 @@ body {
   }
   .navbar{
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    
   }
   .right-menu ul{
     display: flex;
@@ -33,8 +34,9 @@ body {
   }
   
   .right-menu {
+    margin-left: auto;
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
     padding: 10px 0;
   }
