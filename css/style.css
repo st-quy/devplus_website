@@ -67,81 +67,6 @@
   margin-right: 10px;
 }
 
-/*    Header
----------------*/
-.logo {
-  background: #343957;
-  display: inline-block;
-  padding: 15px 0;
-  text-align: center;
-  width: 250px;
-  transition: width 300ms ease-in-out;
-}
-
-.logo span {
-  color: rgba(160, 180, 200, 0.85);
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.sidebar-hide .logo {
-  width: 0;
-}
-
-.sidebar-hide .logo span {
-  display: none;
-}
-
-
-/*    Search box
-----------------------*/
-.main .page-header {
-  min-height: 50px;
-  margin: 15px 0 5px;
-  padding: 0 15px;
-  border-bottom: 0;
-  border-radius: 3px;
-}
-
-.main .page-header h1 {
-  font-size: 18px;
-  padding: 14px 0;
-  margin: 0;
-}
-
-.main .page-header h1 span {
-  font-size: 14px;
-}
-
-.main .page-header .breadcrumb {
-  margin: 0;
-  padding: 15px;
-  background: transparent;
-  float: right;
-}
-
-.main .page-header .breadcrumb li.active {
-  font-family: 'Roboto', sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-}
-
-.main .page-header .breadcrumb li a {
-  font-size: 14px;
-  font-family: 'Roboto', sans-serif;
-  display: block;
-}
-
-.dropdown-task .progress {
-  height: 5px;
-  margin-bottom: 0;
-  margin-top: 20px;
-  box-shadow: none;
-}
-
-.dropdown-task .progress-bar {
-  box-shadow: none;
-}
 
 /*  Responsive*/
 @media (min-width: 320px) and (max-width: 679px) {
@@ -530,6 +455,32 @@ hr {
   border-radius: 8px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 7. video */
 .video-position {
   position: absolute;
@@ -583,6 +534,11 @@ hr {
   border-radius: 50%;
   transform: translate(-50%, -50%);
   animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-i{
+  height: 200px;
+  width: 200px;
 }
 
 @keyframes pulse-border {
@@ -719,33 +675,102 @@ section:hover .section-title h2::before {
   width: 100px;
 }
 
-@media only screen and (min-width: 600px) {
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* The style for the pop-up background overlay */
+.video-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
 }
 
-@media only screen and (min-width: 768px) {
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+/* The style for the pop-up content */
+.popup-content {
+  position: relative;
+  width: 80%;
+  max-width: 640px;
 }
 
+/* Style cho nút đóng pop-up */
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+}
+
+/* Display the pop-up when the target is the pop-up ID */
+:target {
+  display: flex;
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  body {
+    .video-img {
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 150px;
+      border-radius: 2%;
+      right: 100px;
+    }
+    
+    .video-img img {
+      width: 50%;
+    }
+    
+    .video-img a {
+      /* Adjust the play button size and center it */
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      background: #fe8366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
+    
+    .video-img a::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      height: 90px;
+      width: 90px;
+      background: #fe8366;
+      z-index: -1;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      animation: pulse-border 1500ms ease-out infinite;
+    }
+  }
+}
