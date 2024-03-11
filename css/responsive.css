@@ -1,0 +1,30 @@
+/* Normal desktop :1200px. */
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .slider-active .slick-arrow {
+        left: 20px;
+    }
+    .slider-active .slick-next {
+        right: 20px;
+        left: auto;
+    }
+}
+
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .slider-active .slick-track::before {
+        background: #fff5f4;
+    }
+    .slider-bg {
+        min-height: 700px;
+    }
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .slider-four .slider-img {
+        margin-left: 0;
+        margin-top: 50px;
+        margin-right: 0;
+    }
+}
