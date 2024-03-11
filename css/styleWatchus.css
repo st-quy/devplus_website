@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900');
+
+/* 7. video */
+.video-position {
+  position: absolute;
+  bottom: -170px;
+  left: 50px;
+}
+
+.video-area {
+  margin-top: 45px;
+  background-image: url("./../img/video/vedio-bg.png");
+  background-repeat: no-repeat;
+}
+
+.video-img {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  top: 6px;
+  width: 65%;
+  background-image: url("../../img/video/video_03.png");
+  left: 18%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.video-img img {
+  width: 50%;
+}
+
+.video-img a {
+  /* Adjust the play button size and center it */
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: #fe8366;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.video-img a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 90px;
+  width: 90px;
+  background: #fe8366;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulse-border 1500ms ease-out infinite;
+}
+
+.video-i {
+  height: 200px;
+  width: 200px;
+}
+
+@keyframes pulse-border {
+  0% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(-50%) translateY(-50%) translateZ(0) scale(1.5);
+    opacity: 0;
+  }
+}
+
+.section-title h5 {
+  color: #fe8366;
+  justify-content: center;
+  display: flex;
+  margin-bottom: unset;
+}
+
+.section-title h2 {
+  font-size: 48px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  margin-top: 0.5px;
+}
+
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 4px;
+  width: 60px;
+  background: #fe8366;
+  transition: .3s;
+  display: none;
+}
+
+section:hover .section-title h2::before {
+  width: 100px;
+}
+
+/* The style for the pop-up background overlay */
+.video-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+
+/* The style for the pop-up content */
+.popup-content {
+  position: relative;
+  width: 80%;
+  max-width: 640px;
+}
+
+/* Style cho nút đóng pop-up */
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+}
+
+/* Display the pop-up when the target is the pop-up ID */
+:target {
+  display: flex;
+}
+
+/* mobile */
+@media only screen and (max-width: 600px) {
+  body {
+    .video-img {
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 150px;
+      border-radius: 2%;
+      right: 100px;
+    }
+
+    .video-img img {
+      width: 50%;
+    }
+
+    .video-img a {
+      /* Adjust the play button size and center it */
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      background: #fe8366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1;
+    }
+
+    .video-img a::before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      height: 90px;
+      width: 90px;
+      background: #fe8366;
+      z-index: -1;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      animation: pulse-border 1500ms ease-out infinite;
+    }
+  }
+}
