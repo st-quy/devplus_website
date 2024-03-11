@@ -18,13 +18,38 @@
     .slider-bg {
         min-height: 700px;
     }
-}
 
-/* small mobile :320px. */
-@media (max-width: 767px) {
     .slider-four .slider-img {
         margin-left: 0;
         margin-top: 50px;
         margin-right: 0;
+    }
+
+    .slider-text-column,
+    .slider-image-column {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    .slider-text-column,
+    .slider-image-column {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .slider-content {
+        text-align: left;
+    }
+
+    .slider-four .slider-img {
+        margin-left: 0;
+        margin-top: 50px;
+        margin-right: 0;
+    }
+
+    .s-slider-content p {
+        padding-right: 0;
     }
 }
