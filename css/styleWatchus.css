@@ -5,12 +5,14 @@
   position: absolute;
   bottom: -170px;
   left: 50px;
+  margin-bottom: 1px;
 }
 
 .video-area {
-  margin-top: 45px;
+  margin-top: 200px;
   background-image: url("./../img/video/vedio-bg.png");
   background-repeat: no-repeat;
+
 }
 
 .video-img {
@@ -79,7 +81,7 @@
   color: #fe8366;
   justify-content: center;
   display: flex;
-  margin-bottom: unset;
+  margin-bottom: 21px;
 }
 
 .section-title h2 {
@@ -89,7 +91,7 @@
   position: relative;
   justify-content: center;
   display: flex;
-  margin-top: 0.5px;
+  margin-bottom: 32px;
 }
 
 .section-title h2::before {
