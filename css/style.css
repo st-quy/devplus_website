@@ -483,7 +483,10 @@ hr {
   left: 260px;
   width: 65%;
   border-radius: 2%;
-  /* Adjust the height as necessary */
+  background-image:url("../../img/video/vedio-img.png");
+  left: 18%;
+  background-repeat: no-repeat; 
+  background-position: center;
 }
 
 .video-img img {
